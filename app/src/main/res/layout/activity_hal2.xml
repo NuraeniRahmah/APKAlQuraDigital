@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/h"
+    tools:context=".hal2">
+
+    <TextView
+        android:id="@+id/txtAsma"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Asma"
+        android:textColor="@color/colorRen"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtArti"
+        android:layout_width="103dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Arti"
+        android:textColor="@color/colorRen"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAsma" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnPlay">
+
+
+        <TextView
+            android:id="@+id/txtKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Keterangan"
+            android:textColor="@color/colorRen"
+            android:textSize="8pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAudio" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/txtAudio"
+        android:layout_width="272dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/uu"
+        android:gravity="center"
+        android:text="AUDIO"
+        android:textColor="@color/colorRen"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtArti" />
+
+    <Button
+        android:id="@+id/idBtnPlay"
+        android:layout_width="61dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_play_circle_outline_black_24dp"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAudio" />
+
+    <Button
+        android:id="@+id/idBtnPause"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+
+        android:background="@drawable/ic_pause_circle_outline_black_24dp"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAudio" />
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fast_forward_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" ></ImageView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fast_rewind_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="272dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/uu"
+        android:text="Baca Surat"
+        android:textColor="@color/colorRen"
+        android:textSize="14pt"
+        android:id="@+id/btn_baca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
